@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "gulp build"
   },
-  "author": "",
+  "author": "@juansevillano",
   "license": "ISC",
   "dependencies": {
+    "gulp": "^4.0.2",
     "three": "^0.113.2"
   },
   "devDependencies": {

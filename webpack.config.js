@@ -12,7 +12,10 @@ module.exports = {
         contentBase: './dist'
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            verbose: true,
+            cleanOnceBeforeBuildPatterns: ['!' + path.resolve(__dirname, '..', '.tmp')]
+        }),
         new HtmlWebpackPlugin({ title: 'Portfolio 2020' })
     ],
     output: {
